@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.navbar{
+    font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 520;
+  
+ 
+}
+.navbar-brand{
+    font-size: 30px;
+    margin-left: 50px;
+
+
+}
+.navbar-brand:hover{
+    background-color: #6a7411;
+    transform: translateY(-10px) scale(1.05);
+
+}
+
+.nav-item .nav-link:hover{
+    background-color: #6a7411;
+    transform: translateY(-10px) scale(1.05);
+}
+
+.dropdown-menu .dropdown-item:hover{
+    font-weight: 600;
+}
+.container-fluid{
+    background-color: rgb(156, 170, 24);
+}
+.navbar-nav.navbar-nav-scroll{
+    margin-left: 200px;
+}
+.navbar-nav.navbar-nav-scroll li{
+    letter-spacing: 0.1rem;
+    
+}
+.navbar-nav.navbar-nav-scroll .nav-item{
+    margin: 0 3px 0 60px;
+    
+}
+.dropdown-menu .dropdown-item{
+    background-color:#9caa18;
+    font-weight: 500;
+};
+
+.carousel{
+    margin-top: 10px;
+    border: 1px solid black;
+    /* box-shadow: 50px black; */
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.container.section{
+    background-color: #9caa18;
+    /* height: 1000px;
+    width: 1000px; */
+    padding-bottom: 30px;
+}
+.section ul li{
+    align-items: center;
+    list-style: none;
+    font-size: large;
+}
+.section .input{
+    border: 2px solid black;
+    background-color:rgb(156, 170, 24); 
+    width: 500px;
+    
+}
+.body {
+    background-color: #f8f9fa;
+    overflow: hidden; /* Prevents horizontal scrollbar */
+}
+.box{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 20px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a box shadow */
+    padding: 20px;
+    align-items: center;
+    border: #2a2b27; 
+}
+.animated-text {
+    position: absolute;
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: moveLeft 15s linear infinite;
+    background-color: #75775f;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a box shadow */
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+
+@keyframes moveLeft {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+.card{
+    margin: 50px;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .fa-brands {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #9caa18;
+  }
+  
+  .fa-brands:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+  .fa-solid {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #9caa18;
+  }
+  
+  .fa-solid:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+
+
+.container .footbar{
+    background-color: rgb(31, 31, 34);
+}
+
+
+ /* registartionform */
+ #registrationForm {
+    display: none;
+  }
+  .registrationForm{
+    border: 2px solid black;
+  }
+
+
+  /* about */
+
+  .custom-header {
+    background-color: #28a745; /* Bootstrap's green color */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .custom-header:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
