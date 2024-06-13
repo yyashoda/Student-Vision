@@ -138,12 +138,21 @@
 
 
 
-
+   .footer {
+    background-color:rgb(156, 170, 24);  
+    color: black;
+    margin-top: 30px;
+    box-shadow: 80px;
+   }
+   .footer .footbar{
+    background-color:rgb(76, 83, 7);  
+    color: black;
+   }
   .fa-brands {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     margin-right: 20px;
-    color: #9caa18;
+    /* color: #9caa18; */
   }
   
   .fa-brands:hover {
@@ -153,7 +162,7 @@
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     margin-right: 20px;
-    color: #9caa18;
+    /* color: #9caa18; */
   }
   
   .fa-solid:hover {
@@ -168,12 +177,24 @@
 
  /* registartionform */
  #registrationForm {
-    display: none;
+    /* display: none; */
   }
   .registrationForm{
-    border: 2px solid black;
+    border: 2px solid rgb(24, 109, 7);
   }
-
+  
+  .error {
+    border-color: red;
+  }
+  .invalid-feedback {
+    display: none;
+    color: red;
+  }
+  #registrationForm{
+    /* background-color: #28a745; */
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 
   /* about */
 
