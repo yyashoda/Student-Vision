@@ -200,3 +200,61 @@ function displayNews() {
 
 // Call the displayNews function to show news on page load
 displayNews();
+
+
+
+// -----------------------------------thoughts-----------------------------//
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('uploadForm');
+  const output = document.getElementById('output');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const category = document.getElementById('category').value;
+      const topic = document.getElementById('topic').value;
+      const content = document.getElementById('content').value;
+      const fileUpload = document.getElementById('fileUpload').files[0];
+
+      if (!category || !topic || !content) {
+          alert('Please fill all the fields.');
+          return;
+      }
+
+      if (fileUpload) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+              const fileContent = e.target.result;
+              displayOutput(category, topic, content, fileUpload.name, fileContent);
+              showSuccessMessage();
+          };
+          reader.readAsText(fileUpload);
+      } else {
+          displayOutput(category, topic, content);
+          showSuccessMessage();
+      }
+  });
+
+  function displayOutput(category, topic, content, fileName = '', fileContent = '') {
+      output.innerHTML = `
+          <h4>Submission Details</h4>
+          <p><strong>Category:</strong> ${category}</p>
+          <p><strong>Topic:</strong> ${topic}</p>
+          <p><strong>Content:</strong> ${content}</p>
+      `;
+      if (fileName) {
+          output.innerHTML += `
+              <p><strong>Uploaded File:</strong> ${fileName}</p>
+              <pre>${fileContent}</pre>
+          `;
+      }
+  }
+
+  function showSuccessMessage() {
+      successMessage.style.display = 'inline';
+      setTimeout(() => {
+          successMessage.style.display = 'none';
+      }, 3000);
+  }
+});

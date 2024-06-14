@@ -207,3 +207,19 @@
   .custom-header:hover {
     background-color: #218838; /* Darker green on hover */
   }
+
+
+  /* ------------------------thoughts-------------- */
+  #successMessage {
+    display: none;
+    margin-left: 15px;
+    color: green;
+    font-weight: bold;
+}
+.writeyourvision:after{
+
+}
+#uploadForm{
+  margin-left: 300ox;
+  margin-right: 200px;
+}
