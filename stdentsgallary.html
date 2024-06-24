@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Vision</title>
+    <link rel="stylesheet" href="font/Teko-Bold.ttf">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/fontawesome.min.css"> -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Student Vision</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contents
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="current.html">Current News</a></li>
+                <li><a class="dropdown-item" href="political.html">Politics</a></li>
+                <li><a class="dropdown-item" href="economics.html">Economics</a></li>
+    
+                <li><a class="dropdown-item" href="geography.html">Geography</a></li>
+              </ul>
+            </li> 
+    
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!-- ---------------------------------- -->
+   
+    <div class="container">
+        <h1 class="my-4 text-center">Upload and Preview Image with Opinion</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="imageForm">
+                    <div class="form-group">
+                        <label for="imageUpload">Choose an image to upload</label>
+                        <input type="file" class="form-control-file" id="imageUpload" accept="image/*">
+                    </div>
+                    <img id="imagePreview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+                    <div class="opinion-section" id="opinionSection">
+                        <label for="imageOpinion">Your Opinion:</label>
+                        <textarea class="form-control" id="imageOpinion" rows="4" placeholder="Write your opinion about the image..."></textarea>
+                    </div>
+                    <div class="error-message" id="errorMessage">Please provide your opinion about the image.</div>
+                    <button type="button" class="btn btn-primary mt-3" id="uploadButton">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+          
+
+
+
+
+
+
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+
+
+
+    <script src="js/popper.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+</html>

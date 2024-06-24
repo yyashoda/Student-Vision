@@ -11,20 +11,25 @@
  
 }
 .navbar-brand{
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 50px;
+    font-weight: 600;
+    font-style: oblique;
+    font-stretch: expanded;
 
 
 }
 .navbar-brand:hover{
     background-color: #6a7411;
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-5px) scale(1.05);
 
 }
-
+.nav-item .nav-link{
+  font-size: 19PX;
+}
 .nav-item .nav-link:hover{
     background-color: #6a7411;
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-5px) scale(1.05);
 }
 
 .dropdown-menu .dropdown-item:hover{
@@ -67,6 +72,7 @@
     /* height: 1000px;
     width: 1000px; */
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 .section ul li{
     align-items: center;
@@ -113,6 +119,7 @@
 }
 .card{
     margin: 50px;
+    box-shadow: 30px;
 }
 
 .card {
@@ -124,7 +131,13 @@
     transform: translateY(-10px) scale(1.05);
   }
   
-
+  .sudentgallary{
+    font-size: 40px;
+  }
+  .sudentgallary:hover{
+    transform: translateY(-10px) scale(1.05);
+    color: #6a7411;
+  }
 
 
 
@@ -198,8 +211,12 @@
 
   /* about */
 
+  .about-sec{
+    /* background-color: #28a745; */
+
+  }
   .custom-header {
-    background-color: #28a745; /* Bootstrap's green color */
+    background-color: rgb(94, 104, 9); /* Bootstrap's green color */
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -222,4 +239,28 @@
 #uploadForm{
   margin-left: 300ox;
   margin-right: 200px;
+}
+
+
+/* ------------------------sudent gallary-------------------- */
+.imageup{
+  background-color:#9caa18;
+  padding: 20px;
+  box-shadow: 50px;
+  margin-top: 50px;
+}
+
+.image-preview {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 20px;
+}
+.opinion-section {
+  margin-top: 20px;
+  display: none;
+}
+.error-message {
+  color: red;
+  display: none;
 }

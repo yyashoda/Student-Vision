@@ -258,3 +258,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 3000);
   }
 });
+//  --------------------------------studentgallary--------------------------------//
+document.getElementById('imageUpload').addEventListener('change', function(event) {
+  var reader = new FileReader();
+  reader.onload = function(){
+      var output = document.getElementById('imagePreview');
+      output.src = reader.result;
+      output.style.display = 'block';
+      
+      // Show the opinion section
+      var opinionSection = document.getElementById('opinionSection');
+      opinionSection.style.display = 'block';
+  };
+  reader.readAsDataURL(event.target.files[0]);
+});
+
+document.getElementById('uploadButton').addEventListener('click', function() {
+  var opinion = document.getElementById('imageOpinion').value.trim();
+  if (opinion === "") {
+      document.getElementById('errorMessage').style.display = 'block';
+  } else {
+      document.getElementById('errorMessage').style.display = 'none';
+      alert('Image and opinion submitted successfully!');
+      // Here you can add the code to actually submit the form or perform the desired action
+  }
+});
